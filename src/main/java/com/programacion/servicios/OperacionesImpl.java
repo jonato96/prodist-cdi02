@@ -9,7 +9,7 @@ public class OperacionesImpl implements Operaciones{
     private ServicioLog servicio;
     @Override
     public int suma(int x, int y) {
-        servicio.log("Inicianlizando servicios");
+        servicio.log("Inicializando servicios");
         return x+y;
     }
 }

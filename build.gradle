@@ -12,7 +12,14 @@ repositories {
 
 dependencies {
     // https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-core
-    implementation group: 'org.jboss.weld.se', name: 'weld-se-core', version: '4.0.2.Final'
+    // Para aplicaciones
+    //implementation group: 'org.jboss.weld.se', name: 'weld-se-core', version: '4.0.2.Final'
+
+    // https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet-core
+    // Para aplicaciones web
+    // Autoconfiguracion del servidor
+    implementation group: 'org.jboss.weld.servlet', name: 'weld-servlet-core', version: '4.0.2.Final'
+
     // https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
     compileOnly group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '5.0.0'
 
